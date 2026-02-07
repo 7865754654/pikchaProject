@@ -5,7 +5,7 @@ const postButton = document.getElementById('buttonPost')
 const resetButton = document.getElementById('buttonReset')
 const inputLogin = document.getElementById('email')
 const inputPassword = document.getElementById('password')
-const formPikcha = document.getElementById('formPikcha')
+const formCaptcha = document.getElementById('formCaptcha')
 
 postButton.addEventListener('click', () => {
     let valueLogin = inputLogin.value
@@ -13,7 +13,7 @@ postButton.addEventListener('click', () => {
 
     valueLogin === login && valuePassword === password
     ? window.location.href = 'page2.html'
-    : formPikcha.style.display = 'flex' 
+    : formCaptcha.style.display = 'flex' 
 })
 
 resetButton.addEventListener('click', (e) => {

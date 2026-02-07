@@ -1,14 +1,14 @@
-const pikcha = document.getElementById("pikcha")
+const captcha = document.getElementById("captcha")
 
-const originalArr = Array.from(pikcha.children)
+const originalArr = Array.from(captcha.children)
 
 
 function shuffle() {
-const imgs = Array.from(pikcha.children);
+const imgs = Array.from(captcha.children);
 
 imgs.sort(() => Math.random() - 0.5);
 
-imgs.forEach(img => pikcha.appendChild(img));
+imgs.forEach(img => captcha.appendChild(img));
 
 }
 
@@ -21,14 +21,14 @@ function comparePositionElement(arr1, arr2) {
 }
 
 function confirm() {
-    const currentArr = Array.from(pikcha.children)
+    const currentArr = Array.from(captcha.children)
     const isCorrect = comparePositionElement(originalArr, currentArr);
 
   
     let result = document.getElementById("result");
     if (!result) {
       result = document.createElement("div");
-      pikcha.after(result);
+      captcha.after(result);
     }
     
     if (isCorrect) {
