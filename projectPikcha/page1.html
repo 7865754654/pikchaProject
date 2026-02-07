@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="page1.css">
+    <link rel="stylesheet" href="pikcha.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="wrapper-item">
+            <div class="head-form">
+                <p style="font-size: 32px;">Login form</p>
+            </div>
+            <div class="form">
+                <div class="input-text">
+                    <div class="input-item">
+                        <label class='label' for="email">Введите логин:</label>
+                        <input class='input' type="email" id="email">
+                    </div>
+                    <div class="input-item">
+                        <label class='label' for="password">Введите пароль:</label>
+                        <input class='input' type="password" id="password">
+                    </div>
+                </div>
+                
+                <div class="buttons">
+                    <button id='buttonPost' type="button">Войти</button>
+                    <button id='buttonReset' type="button">Сбросить</button>
+                </div>
+                <div class="block-sign">
+                    <p>Нет аккаунта? <a href="http://">Не повезло</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="formPikcha" id="formPikcha">
+        <h3>Подтвердите, что вы не робот</h3>
+        <div class="pikcha" id="pikcha">
+            <img src="pikcha\1.png"  alt="">
+            <img src="pikcha\2.png"  alt="">
+            <img src="pikcha\3.png"  alt="">
+            <img src="pikcha\4.png" alt="">
+        </div>
+
+        <div class="button">
+            <button id="shuffleButton">Перемешать</button>
+            <button id="confirmButton">Подтвердить результат</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="pikcha.js"></script>
+</body>
+
+</html>
